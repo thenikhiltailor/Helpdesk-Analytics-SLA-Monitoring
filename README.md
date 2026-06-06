@@ -14,7 +14,7 @@ Infrastructure downtime directly impacts commercial stability. This project simu
 1. **Initial Structural Diagnostics:** Automates a data integrity scan using `.isnull().sum()` to pinpoint unrecorded metrics across distinct departments.
 2. **Outlier-Resistant Imputation:** Implements a statistical **Median Imputation** strategy for system resolution hours to protect baseline SLAs from being corrupted by extreme infrastructure failure anomalies.
 3. **Data Pruning:** Deploys target row isolation using `.dropna()` to strip out system logs missing critical impact scales.
-4. **Feature Engineering (Risk Weight Index):** Calculates a custom commercial metric (Impact_Score_Times Sponsorship_Revenue_At_Risk) to give stakeholders instant clarity on technical threat levels.
+4. **Feature Engineering (Risk Weight Index):** Calculates a custom commercial metric (Impact_Score_Times * Sponsorship_Revenue_At_Risk) to give stakeholders instant clarity on technical threat levels.
 
 ## 📈 Dashboard Insights Included
 * **Average SLA Technical Resolution Time:** An optimized Seaborn bar chart mapped explicitly by department.
